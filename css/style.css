@@ -1,1 +1,27 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+.card:hover {
+transform: translateY(-10px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2) !important; 
+    border-color: #007bff;
+}
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.carousel-item {
+    background-color: #111; /* Fundo escuro para preencher os lados */
+}
+
+.carousel-item img {
+    height: 400px;
+    width: auto !important; 
+    margin: 0 auto; 
+    object-fit: contain; 
+}

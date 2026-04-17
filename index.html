@@ -4,16 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap - Aula</title>
+    <title>BootMusic</title>
+    <link rel="icon" href="img/iconemusic.webp" type="img">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+
+        .card-img-top {
+            height: 250px;
+            object-fit: cover;
+        }
+        body {
+            background-color: #f8f9fa;
+        }
+    </style>
 </head>
 
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><i class="bi bi-apple-music"></i></a>
+            <a class="navbar-brand" href="index.html"><i class="bi bi-apple-music"></i></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -23,9 +34,11 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link" href="music.html">Music</a>
+                        <a class="nav-link" href="sobre.html">Sobre</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="contato.html">Contato</a>
                     </li>
@@ -34,61 +47,121 @@
         </div>
     </nav>
 
-    <div class="container-fluid mt-3">
+    <div id="heroCarousel" class="carousel slide carousel-fade shadow-lg" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="height: 400px;">
+      <img src="img/rock.webp" class="d-block w-100 h-100 object-fit-cover" alt="Rock">
+      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+        <h5>Os Melhores do Rock</h5>
+        <p>Confira a playlist que está bombando nos charts.</p>
+      </div>
+    </div>
+    <div class="carousel-item" style="height: 400px;">
+      <img src="img/Natiruts-Leve-com-Voce.webp" class="d-block w-100 h-100 object-fit-cover" alt="DJ">
+      <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+        <h5>As melhores do Natiruts</h5>
+        <p>Alegre seus dias com as melhores musicas reggae.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </button>
+</div>
+
+
+    <div class="container mt-3">
         <div class="row ">
             <div class="col-md-4 col-sm-12">
                 <div class="alert alert-secondary" role="alert">
-                    A simple primary alert—check it out!
+                   Escute as melhores musicas do mundo!
                 </div>
             </div>
             <div class="col-md-4 col-sm-12">
                 <div class="alert alert-primary" role="alert">
-                    A simple primary alert—check it out!
+                    Descubra Mais!
                 </div>
             </div>
             <div class="col-md-4 col-sm-12">
                 <div class="alert alert-light" role="alert">
-                    A simple primary alert—check it out!
+                   Hits Virais!
                 </div>
             </div>
         </div>
 
-        <h2 class="mb-3 mt-1">Musicas Mais Escutadas</h2>
+        <div class="text-center my-5">
+    <h2 class="display-5 fw-bold text-gradient">Conheça Músicas Novas</h2>
+    <p class="text-muted">Explore desde musicas conhecidas ate as mais diversas.</p>
+</div>
         <div class="row">
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-4 col-sm-12 d-flex justify-content-center">
                 <div class="card h-100" style="width: 18rem;">
                     <img src="img/badbunny.avif" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">DeBí TiRaR MáS FOToS - Bad Bunny</h5>
-                        <p class="card-text">Musica mais escuta no mundo no mês de Abril.</p>
+                        <h5 class="card-title">DeBí TiRaR MáS FOToS</h5>
+                        <p class="card-text">Musica mais escuta do artista com mais ouvintes, Bad Bunny.</p>
                         <a href="#" class="btn btn-primary">Listen Now</a>
                     </div>
-
                 </div>
-
             </div>
-            <div class="col-md-6 col-sm-12">
-                <div class="card h-100" style="width: 18rem;">
-                    <img src="img/largarfreio.jpg" class="card-img-top" alt="...">
+                <div class="col-md-4 col-sm-12 d-flex justify-content-center">
+                     <div class="card h-100" style="width: 18rem;">
+                    <img src="img/bullyye.webp" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Se eu Largar o Freio</h5>
-                        <p class="card-text">Musica menos escutada no Brasil.</p>
+                        <h5 class="card-title">FATHER (feat.Travis Scott)</h5>
+                        <p class="card-text">Musica do novo album do Kanye West "BULLY".</p>
+                        <a href="#" class="btn btn-primary">Listen Now</a>
+                     </div>
+                    </div>
+             </div>
+                 <div class="col-md-4 col-sm-12 d-flex justify-content-center">
+                <div class="card h-100" style="width: 18rem;">
+                    <img src="img/sinonimos.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sinônimos</h5>
+                        <p class="card-text">Musica classica no Brasil todo, feita por Chitãozinho & Xororó.</p>
                         <a href="#" class="btn btn-primary">Listen Now</a>
                     </div>
                 </div>
             </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="card h-100" style="width: 18rem;">
-                        <img src="img/largarfreio.jpg" class="card-img-top" alt="...">
-                        <div    class="card-body">
-                            <h5 class="card-title">Se eu Largar o Freio</h5>
-                            <p class="card-text">Musica menos escutada no Brasil.</p>
-                            <a href="#" class="btn btn-primary">Listen Now</a>
-                        </div>
+                 <div class="col-md-4 col-sm-12 d-flex justify-content-center">
+                <div class="card h-100" style="width: 18rem;">
+                    <img src="img/natirutssorri.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sorri,Sou Rei</h5>
+                        <p class="card-text">Curta a positividade e paz interior. Deixe-se levar pela harmonia do Natiruts.</p>
+                        <a href="#" class="btn btn-primary">Listen Now</a>
                     </div>
+                </div>
+            </div>
+                 <div class="col-md-4 col-sm-12 d-flex justify-content-center">
+                <div class="card h-100" style="width: 18rem;">
+                    <img src="img/beatlescard.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Here Comes The Sun</h5>
+                        <p class="card-text">A melodia mais radiante dos Beatles</p>
+                        <a href="#" class="btn btn-primary">Listen Now</a>
+                    </div>
+                </div>
+            </div>
+             <div class="col-md-4 col-sm-12 d-flex justify-content-center">
+                <div class="card h-100" style="width: 18rem;">
+                    <img src="img/charliebrownjr.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Como Tudo Deve Ser</h5>
+                        <p class="card-text">"Um hino de resiliência e liberdade que celebra a jornada da vida com a poesia urbana única do Chorão."</p>
+                        <a href="#" class="btn btn-primary">Listen Now</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
