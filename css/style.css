@@ -16,12 +16,5 @@ transform: translateY(-10px);
 }
 
 .carousel-item {
-    background-color: #111; /* Fundo escuro para preencher os lados */
-}
-
-.carousel-item img {
-    height: 400px;
-    width: auto !important; 
-    margin: 0 auto; 
-    object-fit: contain; 
+    background-color: #111; 
 }
