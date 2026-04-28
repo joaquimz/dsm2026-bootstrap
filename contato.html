@@ -39,44 +39,45 @@
     <div class="container mt-4">
         <div class="row">
             <div class="col-md-8 col-lg-6">
-                <h3 class="mb-4">Cadastro de Produto</h3>
+                <h3 class="mb-4">Cadastro de Musicas</h3>
                 
                 <form class="row g-3">
                     <div class="col-12">
                         <div class="form-floating">
                             <input type="text" name="nome" id="nome" class="form-control" placeholder="Nome do Produto" required>
-                            <label for="nome">Nome do Produto</label>
+                            <label for="nome">Nome da Musica</label>
                         </div>
                     </div>
 
                     <div class="col-md-6">
                         <div class="form-floating">
-                            <input type="number" name="valor" id="valor" class="form-control" step="0.5" min="0" placeholder="Valor (R$)" required>
-                            <label for="valor">Valor (R$)</label>
+                            <input type="number" name="valor" id="valor" class="form-control" step="0.5" min="0" placeholder="tempo" required>
+                            <label for="tempo">Tempo de Musica em (minutos) </label>
                         </div>
                     </div>
 
                     <div class="col-md-6">
                         <div class="form-floating">
                             <input type="number" name="quantidade" id="quantidade" class="form-control" min="1" placeholder="Quantidade" required>
-                            <label for="quantidade">Quantidade</label>
+                            <label for="quantidade">Quantidade de Artistas</label>
                         </div>
                     </div>
 
                     <div class="col-12">
                         <div class="form-floating">
                             <select name="categoria" id="categoria" class="form-select" required>
-                                <option value="" selected disabled>Selecione</option>
-                                <option value="instrumentos">Instrumentos</option>
-                                <option value="acessorios">Acessórios</option>
-                                <option value="audio">Áudio/Som</option>
+                                <option value="" selected disabled>Selecione o Gêneros</option>
+                                <option value="rock">Rock</option>
+                                <option value="reggae">Reggae</option>
+                                <option value="sertanejo">Sertanejo</option>
+                                <option value="sertanejo">Rap/Hip Hop</option>
                             </select>
                             <label for="categoria">Categoria</label>
                         </div>
                     </div>
 
                     <div class="col-12">
-                        <label class="form-label d-block mb-2">Fabricado em:</label>
+                        <label class="form-label d-block mb-2">Postada em:</label>
                         <div class="form-check form-check-inline">
                             <input type="radio" name="origem" id="sp" value="sp" class="form-check-input" required>
                             <label for="sp" class="form-check-label">São Paulo (SP)</label>
@@ -99,7 +100,7 @@
                     </div>
 
                     <div class="col-12 mt-4 mb-5">
-                        <button type="submit" class="btn btn-primary">Cadastrar Produto</button>
+                        <button type="submit" class="btn btn-primary">Cadastrar Musica</button>
                         <button type="reset" class="btn btn-secondary ">Limpar</button>
                         <button type="button" class="btn btn-danger">Cancelar</button>
                     </div>
